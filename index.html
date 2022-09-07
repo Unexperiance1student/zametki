@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/norm.css"/>
+	<link rel="stylesheet" href="css/null.css"/>
+	<title>Заметки</title>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="container">
+			<div class="notes">
+				<div class="notes__gl">
+					<div class="notes__head">
+						<svg class="notes__img"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="a1UpkX4fCG7xR70eb2wl _N6H2KQc4xYPH9Pihm46 _YsJxV6Ae_qpZgKyWssN"><path d="M4.746 2.995h2.492v18H4.746v-18z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.738 20.995v-18h8.508a2 2 0 012 2v8.768h-.054a5.5 5.5 0 00-5.222 7.232H8.738zm7.055-11a.9.9 0 100-1.8h-3.6a.9.9 0 000 1.8h3.6z" fill="currentColor"></path><path d="M18.98 15.43a.288.288 0 01.54 0l.825 2.073a.294.294 0 00.247.188l2.138.18c.26.022.365.361.167.539l-1.629 1.461a.316.316 0 00-.094.305l.498 2.185c.06.265-.216.475-.439.333l-1.83-1.17a.282.282 0 00-.306 0l-1.83 1.17c-.223.142-.499-.068-.438-.333l.497-2.185a.316.316 0 00-.094-.305l-1.629-1.461c-.198-.178-.093-.517.167-.54l2.138-.179a.295.295 0 00.248-.188l.823-2.074z" fill="currentColor"></path></svg>
+						<span class="notes__name">Заметки</span>
+					</div>
+					<div class="notes__filer">
+						<div class="notes__amount">Количество заметок: </div>
+						<div class="filters">
+							<img class="filters__add" draggable="false" src="./img/plus-svgrepo-com.svg" alt="">
+							<!-- <svg class="filters__filter" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" ><path fill-rule="evenodd" clip-rule="evenodd" d="M4.898 6.933C3.958 5.747 4.803 4 6.316 4h11.368c1.513 0 2.358 1.747 1.417 2.933l-4.442 5.6v3.434c0 .688-.312 1.34-.847 1.774l-2.444 1.979c-.816.66-2.034.08-2.034-.97v-6.216L4.898 6.933zm1.418-1.688a.564.564 0 00-.442.915l4.705 5.94V18.751l.002.001.002.001.002-.001 2.444-1.979c.243-.197.385-.493.385-.806V12.1l4.712-5.94a.564.564 0 00-.442-.915H6.316z" fill="currentColor"></path></svg> -->
+							<!-- <div class="filters__filter-settings settings">
+								<h2 class="settings__name">Отфильтровать по</h2>
+								<span class="settings__date">дате изменения</span>
+								<span class="settings__create">дате создания</span>
+							</div> -->
+							<svg class="filters__sorting" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.183 4.625a.625.625 0 00-1.25 0V17.87L5.067 16a.625.625 0 00-.884 0 .62.62 0 000 .88l2.933 2.94c.244.244.64.244.884 0l2.933-2.94a.62.62 0 000-.88.625.625 0 00-.884 0l-1.866 1.87V4.625zM11.625 5a.625.625 0 100 1.25h8.75a.625.625 0 100-1.25h-8.75zM11 9.375c0-.345.28-.625.625-.625h6.25a.625.625 0 110 1.25h-6.25A.625.625 0 0111 9.375zM11.625 12.5a.625.625 0 100 1.25h3.75a.625.625 0 100-1.25h-3.75z" fill="currentColor"></path></svg>
+							<div class="filters__sorting-settings settings hide">
+								<h2 class="settings__name">Сортировать по</h2>
+								<span class="settings__date">дате изменения</span>
+								<span class="settings__create">дате создания</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="notes__el">
+					<ul class="notes__list list">
+	
+					</ul>
+				</div>
+				<div class="notes__delete delbtn">
+					<span class="notes__delete-text">Удалить</span>
+				</div>
+			</div>
+			<div class="note">
+				<div class="note__header">
+					<svg class="note__img" width="28" height="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.031 3a3 3 0 00-3 3v11a3 3 0 003 3h11a3 3 0 003-3V6a3 3 0 00-3-3h-11zm4.47 4.289H8.184l2.915 2.914a.625.625 0 01-.884.884L7.3 8.172v2.319a.625.625 0 11-1.25 0V6.674c0-.351.285-.635.635-.635h3.818a.625.625 0 010 1.25zM12.6 15.76h2.318l-2.915-2.915a.625.625 0 11.884-.884l2.915 2.915V12.56a.625.625 0 011.25 0v3.817c0 .35-.285.635-.635.635H12.6a.625.625 0 110-1.25z"></path></svg>
+				</div>
+				<div class="note__date"></div>
+				<textarea disabled="disabled" rows = "2" cols="2 " maxlength="100" data-action="headArea" class="note__heading"  name="heading" id="textarea" placeholder="Название"></textarea>
+				<textarea disabled="disabled" data-action="bodyArea" class="note__text"  name="text" id="textarea" placeholder="Содержание"></textarea>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  opacity: 1;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.507);
+  border-radius: 8px;
+  border: 3px solid rgba(128, 128, 128, 0.507);
+}
+
+.hovered {
+  background-color: rgba(255, 0, 0, 0.7) !important;
+  color: white !important;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.hold {
+  border: 2px solid rgb(23, 44, 233);
+}
+
+.empty {
+  pointer-events: none;
+}
+
+.delbtn {
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.582);
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #a6a699;
+  background-image: url("../img/back.avif");
+  background-size: contain;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  max-width: 1800px;
+  width: 100%;
+  padding: 10px;
+  height: 97vh;
+}
+
+.notes {
+  background-color: #1a1a1a;
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  /* .notes__delete */
+  /* .notes__gl */
+  /* .notes__head */
+  /* .notes__name */
+  /* .notes__img */
+  /* .notes__filer */
+  /* .notes__amount */
+  /* .notes__el */
+  /* .notes__list */
+}
+.notes__delete {
+  font-size: 40px;
+  height: 100px;
+  max-width: 250px;
+  padding: 15px;
+  margin: 25px 10px 10px 10px;
+}
+.notes__delete-text {
+  pointer-events: none;
+  cursor: default;
+  display: inline-block;
+  margin: 25px;
+}
+.notes__gl {
+  border-bottom: 1px solid #000;
+}
+.notes__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.notes__name {
+  font-size: 40px;
+  color: white;
+  margin-left: 6px;
+}
+.notes__img {
+  width: 40px;
+  height: 40px;
+}
+.notes__filer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+  align-items: center;
+}
+.notes__amount {
+  margin-left: 2px;
+}
+.filters {
+  /* .filters__add */
+  /* .filters__sorting */
+  /* .filters__filter */
+}
+.filters__add {
+  height: 24px;
+  width: 24px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.filters__add:hover {
+  background-color: #333;
+}
+.filters__sorting {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  /* .filters__sorting-settings */
+}
+.filters__sorting:hover {
+  background-color: #333;
+}
+.filters__sorting path {
+  pointer-events: none;
+}
+.filters__sorting-settings {
+  position: absolute;
+  left: 90%;
+}
+.filters__filter {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  /* .filters__filter-settings */
+}
+.filters__filter:hover {
+  background-color: #333;
+}
+.filters__filter-settings {
+  visibility: hidden;
+  position: absolute;
+  left: 82%;
+}
+
+.settings {
+  padding: 15px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  width: 220px;
+  /* .settings__name */
+  /* .settings__date */
+  /* .settings__create */
+}
+.settings__name {
+  white-space: nowrap;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #262626;
+}
+.settings__date {
+  display: block;
+  cursor: pointer;
+  color: #fff;
+  padding: 5px 0 0 25px;
+  height: 25px;
+}
+.settings__date:hover {
+  background-color: rgb(73, 73, 73);
+}
+.settings__create {
+  cursor: pointer;
+  color: #fff;
+  padding: 5px 0 0 25px;
+  height: 25px;
+}
+.settings__create:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+.list {
+  overflow: auto;
+  max-height: 70vh;
+  /* .list__item */
+  /* .list__name */
+  /* .list__empty */
+  /* .list__descript */
+  /* .list__date */
+  /* .list__delete */
+  /* .list__img */
+}
+.list__item {
+  position: relative;
+  cursor: pointer;
+  height: 120px;
+  margin: 5px auto;
+  padding: 15px;
+  overflow: hidden;
+  max-width: 255px;
+  width: 100%;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.list__item:hover {
+  background-color: #4d4d4d;
+}
+.list__item:hover .list__delete {
+  display: block;
+}
+.list__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  font-size: 30px;
+  color: white;
+  margin: 0 5px 5px 0;
+}
+.list__empty {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.list__descript {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  margin: 5px 0 30px 0;
+}
+.list__date {
+  pointer-events: none;
+}
+.list__delete {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 5%;
+  left: 75%;
+  height: 25px;
+}
+.list__img {
+  display: block;
+  margin: 5px auto;
+  height: 60px;
+  width: 60px;
+}
+
+.note {
+  background-color: #262626;
+  max-width: 1500px;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  /* .note__header */
+  /* .note__img */
+  /* .note__delete */
+  /* .note__date */
+  /* .note__heading */
+  /* .note__text */
+  /* .note__changes */
+}
+.note__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.note__img {
+  align-self: center;
+  fill: #737373;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.note__img:hover {
+  background-color: #333;
+}
+.note__delete {
+  height: 30px;
+}
+.note__date {
+  margin: 10px 0;
+}
+.note__heading {
+  margin-left: 5px;
+  resize: none;
+  background-color: #262626;
+  color: white;
+  font-size: 50px;
+  width: 99%;
+  max-height: 113px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.note__heading:focus {
+  border-bottom: 1px solid #000;
+  outline: none;
+}
+.note__text {
+  margin-left: 5px;
+  overflow: auto;
+  resize: none;
+  border: none;
+  background-color: #262626;
+  color: white;
+  height: 73vh;
+  font-size: 20px;
+  width: 99%;
+}
+.note__text:focus {
+  border: none;
+  outline: none;
+}
+.note__changes {
+  position: absolute;
+  bottom: 0;
+}/*# sourceMappingURL=main.css.map */
