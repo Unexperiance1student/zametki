@@ -243,7 +243,7 @@ function updateTimeChange(){
                 })
             }
         })
-    },1000)
+    },500)
     saveToLocalStorage()
 }
 
@@ -265,7 +265,7 @@ function saveNameAndDescr(){
             })
         }
     })
-    }, 1000)
+    }, 500)
     saveToLocalStorage()
 }
 
