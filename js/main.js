@@ -259,8 +259,8 @@ function saveNameAndDescr(){
             const listDescr = e.querySelector('.list__descript')
             tasks.forEach(task=>{
                 if(task.id === id){
-                listName.innerText = task.head != "" ? `${task.head}` : "Название"
-                listDescr.innerText = task.desc != "" ? `${task.desc}` : "Описание"
+                listName.innerText = task.head != "" ? `${task.head}` : (task.head="Название")
+                listDescr.innerText = task.desc != "" ? `${task.desc}` : (task.desc="Описание")
                 }
             })
         }
