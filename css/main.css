@@ -95,6 +95,7 @@ body {
   cursor: default;
   display: inline-block;
   margin: 25px;
+  font-size:25px;
 }
 .notes__gl {
   border-bottom: 1px solid #000;
